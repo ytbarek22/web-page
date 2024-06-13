@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Extension</title>
+
+<!--fontawesome-->
+<link rel="stylesheet" href="css/all.css" type="text/css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+<link rel="stylesheet" href="css/elegant-icons.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--custom icons-->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<!--header design-->
+<header class="header">
+ <div class="logo">
+    <a href="#">Project</a>
+ </div> 
+ <i class='bx bx-menu' id="menu-icon"></i>
+<nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portifolo">Courses</a>
+    <a href="#contact">Contact</a>
+    <a href="Modern-Login-master/Login.html">Login</a>
+</nav>
+   
+   
+   
+
+
+</header>
+
+
+
+<!--home section design-->
+<section class="home" id="home">
+    <div class="home-content">
+        <H3>Hello,And Welcome to our</H3>
+        <h1>Industry Extension</h1>
+        <h3>And we will help you to <span> grow and expaned in a particular industry or sector. </span> </h3>
+        <p> In a college context, the term "industry extension" may refer to the collaborative efforts between  <br><br> academic institutions and industries.
+           
+        </p>
+       <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>   
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+       </div>
+        <a href="#about" class="btn">More</a>
+        
+    </div>
+    <div class="home-img">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="img/img1.jpg" alt="Slide 1">
+            </div>
+    
+            <!-- Add more slides as needed -->
+            <div class="mySlides">
+                <img src="img/pc20.jpg" alt="Slide 2">
+            </div>
+    
+            <div class="mySlides">
+                <img src="img/pc22.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides">
+                <img src="img/pc24.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides">
+                <img src="img/pc23.jpg" alt="Slide 5">
+            </div>
+    
+    
+    
+            <!-- You can continue adding more slides -->
+    
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <script>
+       
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].style.opacity = 0;
+
+        fadeIn(slides[slideIndex - 1]);
+
+        setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+    }
+
+    function fadeIn(element) {
+        var opacity = 0;
+        var interval = setInterval(function () {
+            if (opacity < 1) {
+                opacity += 0.1;
+                element.style.opacity = opacity;
+            } else {
+                clearInterval(interval);
+            }
+        }, 300);
+    }
+
+
+    </script>
+    
+    
+    
+</section>
+
+<!--about section design-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="img/img2.jpg" alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Us</span></h2>
+        <h3>Industry Extension</h3>
+        <p>In a college context, the term "industry extension" may refer to the
+             collaborative efforts between academic institutions and industries. This collaboration aims to bridge the gap between theoretical knowledge 
+             gained in classrooms and the practical skills and requirements of various industries. It involves incorporating real-world industry practices into the academic curriculum, 
+            <br><br>
+            Essentially, "industry extension in college" is about aligning academic programs with the needs
+             and advancements of specific industries, ensuring that students are well-prepared and equipped with the practical skills and knowledge
+              required to excel in their chosen fields after graduation. This approach helps students make a smoother transition from the academic environment to the professional world.
+        </p>
+        
+    </div>
+</section>
+
+<!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading">Skills</h2>
+    <div class="services-continer">
+        <div class="services-box">
+            <i class='bx bx-book'></i>
+           <h3>Diversification of <br> Knowledge and Experience</h3>
+           <p>it allows you to diversify your knowledge and 
+            experience across different sectors. This can make you a more versatile
+            by making Adaptability, cross-functional expertise,
+             and the ability to apply best practices from one industry to another.
+            </p>
+           <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-signal-5'></i>
+            <h3>Expanded Professional Network</h3>
+            <p>Engaging in industry extension often involves interacting with professionals
+                 from different sectors. This can significantly expand
+                  your professional network, opening up new opportunities
+                   and collaborations to gain the skills of Networking,
+                    relationship-building, and the ability to
+                     communicate effectively across diverse industries. </p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+         <div class="services-box">
+            <i class='bx bx-library'></i>
+            <h3> Innovation and Problem-Solving</h3>
+            <p>Exposure to different industries exposes you 
+                to varied challenges, fostering a creative 
+                and innovative mindset. You may discover 
+                unique solutions by combining insights from 
+                different fields so  that you can achive 
+                Critical thinking, problem-solving, and innovation, 
+                as you learn to apply solutions from one industry 
+                to address challenges in another</p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+    </div>
+</section>
+
+<!--portifolo section design-->
+<section class="portifolo" id="portifolo">
+    <h2 class="heading"> Our <span>Courses</span></h2>
+    <div class="portifolo-container">
+         <div class="portifol-box">
+            <img src="img/pc11.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4>Garment </h4>
+                <p>Experience the Art and Science of Garment Production <br>
+                    Our cutting-edge curriculum blends design creativity with 
+                    manufacturing precision. Learn the entire lifecycle of
+                     garment production from fiber to fashion through hands-on
+                      projects and industry-aligned courses
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div>
+         <div class="portifol-box">
+            <img src="img/pc12.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4>Technology </h4>
+                <p>Transforming Futures with Technology Expertise <br>
+                    tay ahead in the digital era. Our technology programs 
+                    are designed to equip you with in-demand skills, 
+                    ensuring you are ready to innovate and lead in the rapidly evolving landscape of technology and IT
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div>
+         <div class="portifol-box">
+            <img src="img/pc14.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4>Kaizen </h4>
+                <p>Empowering Excellence Through Kaizen Principles <br>
+                    Immerse yourself in a culture of continuous improvement.
+                     Our programs integrate Kaizen methodologies, shaping 
+                     students into proactive professionals ready to enhance 
+                     processes and drive excellence in any industry
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div>
+         <div class="portifol-box">
+            <img src="img/pc15.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4> Machine Learning</h4>
+                <p> Empower Your Future with Machine Learning Prowess <br>
+                    Dive into the realm of artificial intelligence
+                     and data science. Our machine learning programs are crafted
+                      to give you the skills needed to unravel the potential
+                       of data, providing a solid foundation for careers at
+                        the forefront of technology."
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div>
+         <div class="portifol-box">
+            <img src="img/pc19.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4>Fashion & Design </h4>
+                <p>Unleash Your Creativity in the World of Fashion <br>
+                    Embark on a journey of artistic expression and innovation. 
+                    Our fashion and design programs blend theory 
+                    with practical skills, preparing you for a dynamic 
+                    career in the ever-evolving world of style and trends.
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div> 
+         <div class="portifol-box">
+            <img src="img/pc1.jpg" alt="">
+            <div class="portifolo-layer">
+                <h4>Construction </h4>
+                <p>Building Careers, Building Futures! <br>
+                    "Dive into the realm of artificial intelligence and data science. 
+                    Our machine learning programs are crafted to give you
+                     the skills needed to unravel the potential of data, 
+                     providing a solid foundation for careers at the
+                      forefront of technology
+                 </p>
+                 <a href="#"><i class='bx bx-link'></i></a>
+            </div>
+         </div> 
+     </div>
+</section>
+<!--contact section design-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Us!</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Comment"></textarea>
+        <input type="submit" value="Send Message" class="btn ">    
+    </form>
+</section>
+<!--footer design-->
+<footer class="footer">
+    <div class="footer-text">
+        <p> Copyright &copy;2024 by Group 1| All Rights Reserved. </p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<!--srcoll reval-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--custom js-->
+<script src="js/script.js"></script>
+
+
+<body>
+    
+</body>
+</html>
